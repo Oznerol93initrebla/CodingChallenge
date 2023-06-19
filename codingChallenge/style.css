@@ -1,0 +1,101 @@
+/*     colore verde #00DD00    */
+/*     freccia destra da aggiungere con :after  \21A6 */
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+html{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body{
+    background-image: url("/background.jpg");
+    background-size: contain;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #00E8D1;
+}
+
+.all{
+    background-color: rgba(0,0,0,0.5);
+    width: 70%;
+    /* max-width: 800px; */
+    margin: 50px auto 100px;
+}
+
+header{
+    padding-top: 30px;
+    text-align: center;
+    color: #00DD00;
+}
+header img{
+
+    width: 30%;
+}
+nav{
+    width: 80%;
+    padding: 15px;
+    background-color: #00DD00;
+    text-align: center;
+}
+h2{
+    display: inline-block;
+}
+
+p:before{
+    content: '\21A6 ';
+}
+
+.info{
+    margin: 15px;
+    padding-bottom: 50px;
+    text-align: left;
+    color: #ffffff;
+}
+/*-------
+    barra carica full
+--------*/
+.info .full{
+    margin: 0;
+    height: 20px;
+    width: 75%;
+    background-color: #00DD00;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+}
+
+.full:after{
+    content: '100%';
+}
+/*-------
+    barra carica medium
+--------*/
+.info .medium{
+    margin: 0;
+    height: 20px;
+    width: 50%;
+    background-color: #F5B453;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+}
+.medium:after{
+    content: '75%';
+}
+/*-------
+    barra carica low
+--------*/
+.info .low{
+    margin: 0;
+    height: 20px;
+    width: 25%;
+    background-color: #BE4141;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+}
+.low::after{
+    content: '25%';
+}
+
